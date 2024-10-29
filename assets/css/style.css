@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box > div {
+  /* border: 1px solid black; */
+  margin: 0;
+}
+.box {
+  width: 60%;
+  height: 70%;
+  padding: 0px 100px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.info {
+  display: flex;
+  justify-content: flex-end;
+}
+.info .scoreList {
+  list-style: none;
+  font-size: 25px;
+  text-align: end;
+  margin: 0;
+}
+
+.info .scoreList li {
+  margin-bottom: 20px;
+}
+
+.info .scoreList li span {
+  font-weight: revert;
+  letter-spacing: 3px;
+  color: #00000096;
+}
+
+.info .scoreList li b {
+  font-size: 45px;
+  line-height: 10px;
+}
+.emotes {
+  display: flex;
+  justify-content: space-around;
+}
+.emotes img {
+  cursor: pointer;
+  width: 150px;
+  padding: 20px;
+  background-color: rgb(233, 210, 7);
+  border-radius: 50%;
+  box-shadow: 0 0 10px black;
+  transition: all 2s ease-in-out;
+}
+
+.emotes img:hover {
+  width: 175px;
+  border: 1px solid black;
+  box-shadow: 0 0 100px yellow;
+  transform: translateY(-50px);
+  transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  -o-transform: translateY(-50px);
+}
+
+.controller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controller .alert {
+  background-color: lightpink;
+  font-size: 20px;
+  margin: 20px 0px;
+  padding: 20px 150px;
+  border-radius: 5px;
+}
+.controller .buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.controller .reload,
+.controller .reset {
+  width: auto;
+  padding: 10px 75px;
+  font-size: 15px;
+  border: 0px;
+  border-radius: 5px;
+}
+.controller .reload {
+  background-color: yellow;
+}
+.controller .reset {
+  background-color: red;
+  color: white;
+}

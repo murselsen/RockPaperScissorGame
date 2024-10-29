@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="info">
+        <ul class="scoreList">
+          <li><span>Computer: </span><b id="computerScore">0</b></li>
+          <li><span>You: </span><b id="youScore">0</b></li>
+        </ul>
+      </div>
+      <div class="emotes" id="emotes">
+        <img
+          id="rock"
+          src="assets/image/oncoming-fist-skin-1-svgrepo-com.svg"
+          alt="Rock"
+          title="Rock"
+        />
+        <img
+          id="paper"
+          src="assets/image/raised-back-of-hand-skin-1-svgrepo-com.svg"
+          alt="Paper"
+          title="Paper"
+        />
+        <img
+          id="scissor"
+          src="assets/image/victory-hand-skin-1-svgrepo-com.svg"
+          alt="Scissor"
+          title="Scissor"
+        />
+      </div>
+      <div class="controller">
+        <div class="alert" style="visibility: hidden" id="gameAlert">
+          You Lose !
+          <br />
+          <span>You: </span> <span>Computer: </span>
+        </div>
+        <br />
+
+        <div class="buttons" id="buttons" style="visibility: hidden">
+          <button class="reload" onclick="game.restart()">Restart</button>
+          <button class="reset" onclick="game.reset()">Score Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
